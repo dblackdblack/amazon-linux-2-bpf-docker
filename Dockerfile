@@ -1,4 +1,4 @@
-FROM quay.io/iovisor/bpftrace:master-vanilla_llvm_clang_glibc2.27 AS bpftrace
+FROM quay.io/iovisor/bpftrace:master-vanilla_llvm_clang_glibc2.23 AS bpftrace
 
 FROM amazonlinux:2
 
