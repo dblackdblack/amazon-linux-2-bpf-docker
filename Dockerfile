@@ -6,6 +6,7 @@ RUN true \
     && yes | yum install deltarpm \
     && yes | yum install kernel-headers-$(echo 4.14.181-142.260.amzn2.x86_64 | cut -d'.' -f1-5) \
     && yes | yum install kernel-devel-4.14.181-142.260.amzn2.x86_64 \
+    && yes | yum install kernel-devel-4.14.181-140.257.amzn2.x86_64 \
     && amazon-linux-extras enable BCC \
     && yes | yum install bcc 
 
