@@ -8,7 +8,7 @@ RUN true \
     && yes | yum install kernel-devel-4.14.181-142.260.amzn2.x86_64 \
     && yes | yum install kernel-devel-4.14.181-140.257.amzn2.x86_64 \
     && amazon-linux-extras enable BCC \
-    && yes | yum install bcc 
+    && yes | yum install bcc procps
 
 COPY --from=bpftrace ["/usr/local/bin/*.bt", "/usr/local/bin/"]
 COPY --from=bpftrace ["/usr/bin/bpftrace", "/usr/local/bin/"]
