@@ -9,6 +9,7 @@ RUN true \
                          kernel-devel-4.14.181-140.257.amzn2.x86_64 \
                          kernel-devel-4.14.186-146.268.amzn2.x86_64 \
                          kernel-devel-4.14.154-128.181.amzn2.x86_64 \
+                         kernel-devel-4.14.177-139.253.amzn2.x86_64 \
     && amazon-linux-extras enable BCC \
     && yes | yum install bcc procps psmisc less vim tcpdump strace bind-utils net-tools iproute
 
