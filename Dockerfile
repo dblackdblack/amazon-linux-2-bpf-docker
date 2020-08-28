@@ -10,7 +10,7 @@ RUN true \
                          kernel-devel-4.14.186-146.268.amzn2.x86_64 \
                          kernel-devel-4.14.154-128.181.amzn2.x86_64 \
     && amazon-linux-extras enable BCC \
-    && yes | yum install bcc procps psmisc less vim tcpdump strace bind-utils
+    && yes | yum install bcc procps psmisc less vim tcpdump strace bind-utils net-tools
 
 COPY --from=bpftrace ["/usr/local/bin/*.bt", "/usr/local/bin/"]
 COPY --from=bpftrace ["/usr/bin/bpftrace", "/usr/local/bin/"]
